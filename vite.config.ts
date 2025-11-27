@@ -4,5 +4,6 @@ import react from '@vitejs/plugin-react'
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: './', // Ensures relative paths for assets so it works on any subdirectory
+  // IMPORTANT: This must match your repository name exactly for GitHub Pages
+  base: '/pdf-extractor/', 
 })
